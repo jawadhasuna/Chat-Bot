@@ -1,16 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&family=Luckiest+Guy&family=Baloo+2:wght@800&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloop Chats</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <meta name="theme-color" content="#CF80BE" />
-    <meta name="description" content="Atom Chats - a conversational AI assistant you can type to or talk to." />
-    <meta property="og:title" content="Atom Chats" />
-    <meta property="og:description" content="A text and voice chatbot in the Atom suite." />
-    <meta property="og:image" content="https://atomchatbot.vercel.app/og-image.png" />
+    <meta name="description" content="Bloop Chats - a conversational AI assistant you can type to or talk to." />
+    <meta property="og:title" content="Bloop Chats" />
+    <meta property="og:description" content="A text and voice chatbot you can type to or talk to." />
+    <meta property="og:image" content="https://bloopchats.vercel.app/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>
       * {
@@ -38,14 +44,25 @@
         overflow: hidden;
       }
       .chat-header {
-        background: #cf80be;
-        color: white;
-        padding: 20px;
+        background: #2E86D0;
+        padding: 24px 18px 28px;
         text-align: center;
-        font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 1px;
+        font-family: "Titan One", "Segoe UI", sans-serif;
+        font-size: clamp(26px, 7vw, 38px);
+        line-height: 1.05;
+        letter-spacing: 2px;
         text-transform: uppercase;
+        color: #F274B8;
+
+        /* The cream keyline is a stroke rather than stacked text-shadows so it
+           stays even on the round letterforms. paint-order puts it behind the
+           fill - without it the stroke is centred on the glyph edge and eats
+           half the pink. */
+        -webkit-text-stroke: 7px #FCEFA1;
+        paint-order: stroke fill;
+
+        /* sits the word on the blue rather than floating on it */
+        text-shadow: 0 6px 0 rgba(20, 60, 100, 0.22);
       }
       .chat-box {
         flex: 1;
