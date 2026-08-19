@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Atom Chats">
+  <title>Atom Chats</title>
+  <rect width="32" height="32" rx="7" fill="#CF80BE"/>
+  <path d="M11 9.5h10a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-6L11 24v-3.5a3 3 0 0 1-3-3v-5a3 3 0 0 1 3-3z"
+        fill="#FFFFFF"/>
+</svg>
